@@ -1,0 +1,58 @@
+module FSM_tb;
+
+// Parameters
+parameter CLK_PERIOD = 10; // Clock period in time units
+
+// Signals
+reg clk = 0;        // Clock signal
+reg rst = 1;        // Reset signal (active high)
+reg press = 0;      // Input signal for button press
+wire [7:0] err;     // Output error signal
+wire [7:0] count;   // Output count signal
+
+// Instantiate the module under test
+MaquinaEstados dut (
+    .clk(clk),
+    .rst(rst),
+    .press(press),
+    .err(err),
+    .count(count)
+);
+
+// Clock generation
+always #((CLK_PERIOD / 2)) clk = ~clk;
+
+// Stimulus
+initial begin
+    // Reset initialization
+    rst = 1;
+    press = 0;
+    #20; // Wait for 20 time units
+    rst = 0;
+    #20; // Wait for 20 time units
+    
+    // Press the button for a few clock cycles
+    press = 1;
+    #30; // Wait for 30 time units
+    press = 0;
+    #30; // Wait for 30 time units
+    
+    // Press the button again
+    press = 1;
+    #30; // Wait for 30 time units
+    press = 0;
+    #30; // Wait for 30 time units
+    
+    // Press the button repeatedly
+    repeat (5) begin
+        press = 1;
+        #20; // Wait for 20 time units
+        press = 0;
+        #20; // Wait for 20 time units
+    end
+    
+    // End of simulation
+    $finish;
+end
+
+endmodule
