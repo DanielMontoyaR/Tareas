@@ -1,5 +1,5 @@
-Analysis & Elaboration report for MaquinaEstados
-Thu Mar 14 19:54:57 2024
+Analysis & Synthesis report for MaquinaEstados
+Sat Mar 16 19:58:39 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -7,11 +7,19 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
-  6. Analysis & Elaboration Suppressed Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. Logic Cells Representing Combinational Loops
+ 10. General Register Statistics
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+ 14. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -35,42 +43,31 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                              ;
-+-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Thu Mar 14 19:54:57 2024       ;
-; Quartus Prime Version         ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
-; Revision Name                 ; MaquinaEstados                              ;
-; Top-level Entity Name         ; FSM                                         ;
-; Family                        ; Cyclone V                                   ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
-; Total registers               ; N/A until Partition Merge                   ;
-; Total pins                    ; N/A until Partition Merge                   ;
-; Total virtual pins            ; N/A until Partition Merge                   ;
-; Total block memory bits       ; N/A until Partition Merge                   ;
-; Total PLLs                    ; N/A until Partition Merge                   ;
-; Total DLLs                    ; N/A until Partition Merge                   ;
-+-------------------------------+---------------------------------------------+
-
-
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sat Mar 16 19:58:39 2024       ;
+; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                   ; MaquinaEstados                              ;
+; Top-level Entity Name           ; FSM                                         ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 19                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                           ;
+; Analysis & Synthesis Settings                                                                                             ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
@@ -156,51 +153,224 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                             ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                         ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------+---------+
+; FSM.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------+---------+
+
+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimate of Logic utilization (ALMs needed) ; 13           ;
+;                                             ;              ;
+; Combinational ALUT usage for logic          ; 24           ;
+;     -- 7 input functions                    ; 0            ;
+;     -- 6 input functions                    ; 2            ;
+;     -- 5 input functions                    ; 0            ;
+;     -- 4 input functions                    ; 2            ;
+;     -- <=3 input functions                  ; 20           ;
+;                                             ;              ;
+; Dedicated logic registers                   ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 19           ;
+;                                             ;              ;
+; Total DSP Blocks                            ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; err[0]$latch ;
+; Maximum fan-out                             ; 9            ;
+; Total fan-out                               ; 107          ;
+; Average fan-out                             ; 1.73         ;
++---------------------------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; |FSM                       ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 19   ; 0            ; |FSM                ; FSM         ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; err[0]$latch                                        ; Selector0           ; yes                    ;
+; err[1]$latch                                        ; Selector0           ; yes                    ;
+; err[2]$latch                                        ; Selector0           ; yes                    ;
+; err[3]$latch                                        ; Selector0           ; yes                    ;
+; err[4]$latch                                        ; Selector0           ; yes                    ;
+; err[5]$latch                                        ; Selector0           ; yes                    ;
+; err[6]$latch                                        ; Selector0           ; yes                    ;
+; err[7]$latch                                        ; Selector0           ; yes                    ;
+; count_reg[0]                                        ; next_state.10       ; yes                    ;
+; count_reg[1]                                        ; next_state.10       ; yes                    ;
+; count_reg[2]                                        ; next_state.10       ; yes                    ;
+; count_reg[3]                                        ; next_state.10       ; yes                    ;
+; count_reg[4]                                        ; next_state.10       ; yes                    ;
+; count_reg[5]                                        ; next_state.10       ; yes                    ;
+; count_reg[6]                                        ; next_state.10       ; yes                    ;
+; count_reg[7]                                        ; next_state.10       ; yes                    ;
+; count_cycle[0]                                      ; Selector3           ; yes                    ;
+; count_cycle[1]                                      ; Selector3           ; yes                    ;
+; Number of user-specified and inferred latches = 18  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops               ;
++--------------------------------------------------------+---+
+; Logic Cell Name                                        ;   ;
++--------------------------------------------------------+---+
+; Selector0~0                                            ;   ;
+; Selector0~1                                            ;   ;
+; Number of logic cells representing combinational loops ; 2 ;
++--------------------------------------------------------+---+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 24                          ;
+;     arith             ; 7                           ;
+;         1 data inputs ; 6                           ;
+;         2 data inputs ; 1                           ;
+;     normal            ; 17                          ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 12                          ;
+;         4 data inputs ; 2                           ;
+;         6 data inputs ; 2                           ;
+; boundary_port         ; 19                          ;
+;                       ;                             ;
+; Max LUT depth         ; 2.60                        ;
+; Average LUT depth     ; 2.03                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Mar 14 19:54:52 2024
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MaquinaEstados -c MaquinaEstados --analysis_and_elaboration
+    Info: Processing started: Sat Mar 16 19:58:31 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MaquinaEstados -c MaquinaEstados
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file fsm.sv
-    Info (12023): Found entity 1: FSM File: C:/Users/Daniel/Desktop/Tarea FSM/FSM.sv Line: 1
+    Info (12023): Found entity 1: FSM File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fsm_tb.sv
-    Info (12023): Found entity 1: FSM_tb File: C:/Users/Daniel/Desktop/Tarea FSM/FSM_tb.sv Line: 1
+    Info (12023): Found entity 1: FSM_tb File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM_tb.sv Line: 1
 Info (12127): Elaborating entity "FSM" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at FSM.sv(44): truncated value with size 32 to match size of target (8) File: C:/Users/Daniel/Desktop/Tarea FSM/FSM.sv Line: 44
-Warning (10240): Verilog HDL Always Construct warning at FSM.sv(28): inferring latch(es) for variable "count_reg", which holds its previous value in one or more paths through the always construct File: C:/Users/Daniel/Desktop/Tarea FSM/FSM.sv Line: 28
-Warning (10240): Verilog HDL Always Construct warning at FSM.sv(28): inferring latch(es) for variable "err", which holds its previous value in one or more paths through the always construct File: C:/Users/Daniel/Desktop/Tarea FSM/FSM.sv Line: 28
-Info (10041): Inferred latch for "err[0]" at FSM.sv(28) File: C:/Users/Daniel/Desktop/Tarea FSM/FSM.sv Line: 28
-Info (10041): Inferred latch for "err[1]" at FSM.sv(28) File: C:/Users/Daniel/Desktop/Tarea FSM/FSM.sv Line: 28
-Info (10041): Inferred latch for "err[2]" at FSM.sv(28) File: C:/Users/Daniel/Desktop/Tarea FSM/FSM.sv Line: 28
-Info (10041): Inferred latch for "err[3]" at FSM.sv(28) File: C:/Users/Daniel/Desktop/Tarea FSM/FSM.sv Line: 28
-Info (10041): Inferred latch for "err[4]" at FSM.sv(28) File: C:/Users/Daniel/Desktop/Tarea FSM/FSM.sv Line: 28
-Info (10041): Inferred latch for "err[5]" at FSM.sv(28) File: C:/Users/Daniel/Desktop/Tarea FSM/FSM.sv Line: 28
-Info (10041): Inferred latch for "err[6]" at FSM.sv(28) File: C:/Users/Daniel/Desktop/Tarea FSM/FSM.sv Line: 28
-Info (10041): Inferred latch for "err[7]" at FSM.sv(28) File: C:/Users/Daniel/Desktop/Tarea FSM/FSM.sv Line: 28
-Info (10041): Inferred latch for "count_reg[0]" at FSM.sv(28) File: C:/Users/Daniel/Desktop/Tarea FSM/FSM.sv Line: 28
-Info (10041): Inferred latch for "count_reg[1]" at FSM.sv(28) File: C:/Users/Daniel/Desktop/Tarea FSM/FSM.sv Line: 28
-Info (10041): Inferred latch for "count_reg[2]" at FSM.sv(28) File: C:/Users/Daniel/Desktop/Tarea FSM/FSM.sv Line: 28
-Info (10041): Inferred latch for "count_reg[3]" at FSM.sv(28) File: C:/Users/Daniel/Desktop/Tarea FSM/FSM.sv Line: 28
-Info (10041): Inferred latch for "count_reg[4]" at FSM.sv(28) File: C:/Users/Daniel/Desktop/Tarea FSM/FSM.sv Line: 28
-Info (10041): Inferred latch for "count_reg[5]" at FSM.sv(28) File: C:/Users/Daniel/Desktop/Tarea FSM/FSM.sv Line: 28
-Info (10041): Inferred latch for "count_reg[6]" at FSM.sv(28) File: C:/Users/Daniel/Desktop/Tarea FSM/FSM.sv Line: 28
-Info (10041): Inferred latch for "count_reg[7]" at FSM.sv(28) File: C:/Users/Daniel/Desktop/Tarea FSM/FSM.sv Line: 28
-Info (144001): Generated suppressed messages file C:/Users/Daniel/Desktop/Tarea FSM/output_files/MaquinaEstados.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4760 megabytes
-    Info: Processing ended: Thu Mar 14 19:54:57 2024
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:16
+Warning (10230): Verilog HDL assignment warning at FSM.sv(39): truncated value with size 32 to match size of target (2) File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 39
+Warning (10230): Verilog HDL assignment warning at FSM.sv(47): truncated value with size 32 to match size of target (8) File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 47
+Warning (10240): Verilog HDL Always Construct warning at FSM.sv(27): inferring latch(es) for variable "count_cycle", which holds its previous value in one or more paths through the always construct File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+Warning (10240): Verilog HDL Always Construct warning at FSM.sv(27): inferring latch(es) for variable "count_reg", which holds its previous value in one or more paths through the always construct File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+Warning (10240): Verilog HDL Always Construct warning at FSM.sv(27): inferring latch(es) for variable "err", which holds its previous value in one or more paths through the always construct File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+Info (10041): Inferred latch for "err[0]" at FSM.sv(27) File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+Info (10041): Inferred latch for "err[1]" at FSM.sv(27) File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+Info (10041): Inferred latch for "err[2]" at FSM.sv(27) File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+Info (10041): Inferred latch for "err[3]" at FSM.sv(27) File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+Info (10041): Inferred latch for "err[4]" at FSM.sv(27) File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+Info (10041): Inferred latch for "err[5]" at FSM.sv(27) File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+Info (10041): Inferred latch for "err[6]" at FSM.sv(27) File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+Info (10041): Inferred latch for "err[7]" at FSM.sv(27) File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+Info (10041): Inferred latch for "count_reg[0]" at FSM.sv(27) File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+Info (10041): Inferred latch for "count_reg[1]" at FSM.sv(27) File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+Info (10041): Inferred latch for "count_reg[2]" at FSM.sv(27) File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+Info (10041): Inferred latch for "count_reg[3]" at FSM.sv(27) File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+Info (10041): Inferred latch for "count_reg[4]" at FSM.sv(27) File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+Info (10041): Inferred latch for "count_reg[5]" at FSM.sv(27) File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+Info (10041): Inferred latch for "count_reg[6]" at FSM.sv(27) File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+Info (10041): Inferred latch for "count_reg[7]" at FSM.sv(27) File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+Info (10041): Inferred latch for "count_cycle[0]" at FSM.sv(27) File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+Info (10041): Inferred latch for "count_cycle[1]" at FSM.sv(27) File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "err[7]$latch" merged with LATCH primitive "err[0]$latch" File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+    Info (13026): Duplicate LATCH primitive "err[6]$latch" merged with LATCH primitive "err[0]$latch" File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+    Info (13026): Duplicate LATCH primitive "err[5]$latch" merged with LATCH primitive "err[0]$latch" File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+    Info (13026): Duplicate LATCH primitive "err[4]$latch" merged with LATCH primitive "err[0]$latch" File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+    Info (13026): Duplicate LATCH primitive "err[3]$latch" merged with LATCH primitive "err[0]$latch" File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+    Info (13026): Duplicate LATCH primitive "err[2]$latch" merged with LATCH primitive "err[0]$latch" File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+    Info (13026): Duplicate LATCH primitive "err[1]$latch" merged with LATCH primitive "err[0]$latch" File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+Warning (13012): Latch count_cycle[0] has unsafe behavior File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal count_cycle[0] File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+Warning (13012): Latch count_cycle[1] has unsafe behavior File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal count_cycle[0] File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 27
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/output_files/MaquinaEstados.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 1
+Info (21057): Implemented 43 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 24 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 4824 megabytes
+    Info: Processing ended: Sat Mar 16 19:58:39 2024
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:22
 
 
-+--------------------------------------------+
-; Analysis & Elaboration Suppressed Messages ;
-+--------------------------------------------+
-The suppressed messages can be found in C:/Users/Daniel/Desktop/Tarea FSM/output_files/MaquinaEstados.map.smsg.
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/output_files/MaquinaEstados.map.smsg.
 
 

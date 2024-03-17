@@ -13,8 +13,8 @@ wire [7:0] count;   // Output count signal
 // Instantiate the module under test
 FSM dut (
     .clk(clk),
-    .rst(rst),
     .press(press),
+	 .rst(rst),
     .err(err),
     .count(count)
 );
@@ -37,12 +37,16 @@ initial begin
 	press=1;
 	#20
 	
-	rst=0;
-	press =0;
-	clk = 1;
+	rst= 0;
+	press = 0;
+	#200
+	
+	rst= 1;
+	press = 0;
 	#20
 	
-	rst=1;
+	rst= 1;
+	press = 1;
 	
 end
 

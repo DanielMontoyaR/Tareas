@@ -1,12 +1,12 @@
-Fitter Status : Successful - Thu Mar 14 19:54:12 2024
+Fitter Status : Successful - Sat Mar 16 19:59:16 2024
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : MaquinaEstados
 Top-level Entity Name : FSM
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 11 / 32,070 ( < 1 % )
-Total registers : 4
+Logic utilization (in ALMs) : 14 / 32,070 ( < 1 % )
+Total registers : 0
 Total pins : 19 / 457 ( 4 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 4,065,280 ( 0 % )
