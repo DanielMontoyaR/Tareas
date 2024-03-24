@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition"
 
-// DATE "03/23/2024 23:27:39"
+// DATE "03/24/2024 17:02:32"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -613,7 +613,7 @@ cyclonev_mac \Mult0~mac (
 	.accumulate(gnd),
 	.loadconst(gnd),
 	.ax({\Add0~1_combout ,\Add0~0_combout }),
-	.ay({\state.10~q }),
+	.ay({!\state.10~q }),
 	.az(26'b00000000000000000000000000),
 	.bx(18'b000000000000000000),
 	.by(19'b0000000000000000000),

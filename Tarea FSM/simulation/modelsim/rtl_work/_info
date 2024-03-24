@@ -8,56 +8,56 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/Daniel/Desktop/a/Tareas-main/Tarea FSM/simulation/modelsim
+Z0 dC:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/simulation/modelsim
 vFSM
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1711258202
+Z2 !s110 1711321375
 !i10b 1
-!s100 @o9zMJjbOF0o`9`U;Je@a0
+!s100 UfaahSRo^ZciXJRLW0>P42
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I;I;LC6FeVRfb@5XL;A7<>2
+IP;mJ0Wi_egmPJW>EZYFlT3
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1711257965
-8C:/Users/Daniel/Desktop/a/Tareas-main/Tarea FSM/FSM.sv
-FC:/Users/Daniel/Desktop/a/Tareas-main/Tarea FSM/FSM.sv
+w1711321171
+8C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv
+FC:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv
 !i122 0
 L0 1 74
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1711258202.000000
-!s107 C:/Users/Daniel/Desktop/a/Tareas-main/Tarea FSM/FSM.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Daniel/Desktop/a/Tareas-main/Tarea FSM|C:/Users/Daniel/Desktop/a/Tareas-main/Tarea FSM/FSM.sv|
+Z6 !s108 1711321375.000000
+!s107 C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM|C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv|
 !i113 1
 Z7 o-sv -work work
-Z8 !s92 -sv -work work {+incdir+C:/Users/Daniel/Desktop/a/Tareas-main/Tarea FSM}
+Z8 !s92 -sv -work work {+incdir+C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM}
 Z9 tCvgOpt 0
 n@f@s@m
 vFSM_tb
 R1
 R2
 !i10b 1
-!s100 om:hhdkAAiHm=K[MZ_=^Q3
+!s100 @[d]nZ^eAKIkRn4k815S^1
 R3
-I]iGLLfVPK2O:@748NXnhY1
+Io9?n]JdM2^8LPoScWLz<j2
 R4
 S1
 R0
-w1710965780
-8C:/Users/Daniel/Desktop/a/Tareas-main/Tarea FSM/FSM_tb.sv
-FC:/Users/Daniel/Desktop/a/Tareas-main/Tarea FSM/FSM_tb.sv
+w1711321187
+8C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM_tb.sv
+FC:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM_tb.sv
 !i122 1
-L0 1 60
+L0 1 57
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/Users/Daniel/Desktop/a/Tareas-main/Tarea FSM/FSM_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Daniel/Desktop/a/Tareas-main/Tarea FSM|C:/Users/Daniel/Desktop/a/Tareas-main/Tarea FSM/FSM_tb.sv|
+!s107 C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM|C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM_tb.sv|
 !i113 1
 R7
 R8

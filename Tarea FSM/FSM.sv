@@ -64,11 +64,11 @@ begin
 end
 
 always @(*) begin
+	count_cycle =  (state != 2'b10)*(count_cycle + (state == 2'b01));
+	count_reg = count_reg + (state == 2'b10);
+	error_reg = (state == 2'b11)*8'hFF;
 	count = count_reg;
 	err = error_reg;
-	count_cycle =  (state == 2'b10)*(count_cycle + (state == 2'b01));
-	count_reg = count_reg+(state == 2'b10);
-	error_reg = (state==2'b11)*8'hFF;
 end
 
 endmodule

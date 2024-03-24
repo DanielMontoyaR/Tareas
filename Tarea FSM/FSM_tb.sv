@@ -42,18 +42,15 @@ initial begin
 	#200
 	
 	rst= 1;
-	press = 1;
+	press = 0;
 	#20
 	
 	rst= 0;
 	press = 1;
-	
 	#20
 
 	rst= 0;
-	press = 0;
-	
-	
+	press = 1;
 	
 end
 

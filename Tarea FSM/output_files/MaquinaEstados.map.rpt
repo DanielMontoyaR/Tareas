@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MaquinaEstados
-Sat Mar 23 23:26:51 2024
+Sun Mar 24 17:00:16 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -47,7 +47,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Mar 23 23:26:51 2024       ;
+; Analysis & Synthesis Status     ; Successful - Sun Mar 24 17:00:15 2024       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; MaquinaEstados                              ;
 ; Top-level Entity Name           ; FSM                                         ;
@@ -159,25 +159,25 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 16          ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                               ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                           ; Library ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------+---------+
-; FSM.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Daniel/Desktop/a/Tareas-main/Tarea FSM/FSM.sv ;         ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                             ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                         ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------+---------+
+; FSM.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------+
@@ -314,7 +314,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -324,14 +324,14 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Mar 23 23:26:45 2024
+    Info: Processing started: Sun Mar 24 16:59:48 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MaquinaEstados -c MaquinaEstados
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file fsm.sv
-    Info (12023): Found entity 1: FSM File: C:/Users/Daniel/Desktop/a/Tareas-main/Tarea FSM/FSM.sv Line: 1
+    Info (12023): Found entity 1: FSM File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fsm_tb.sv
-    Info (12023): Found entity 1: FSM_tb File: C:/Users/Daniel/Desktop/a/Tareas-main/Tarea FSM/FSM_tb.sv Line: 1
+    Info (12023): Found entity 1: FSM_tb File: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/FSM_tb.sv Line: 1
 Info (12127): Elaborating entity "FSM" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 2 registers lost all their fanouts during netlist optimizations.
@@ -343,9 +343,9 @@ Info (21057): Implemented 34 device resources after synthesis - the final resour
     Info (21061): Implemented 14 logic cells
     Info (21062): Implemented 1 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4877 megabytes
-    Info: Processing ended: Sat Mar 23 23:26:51 2024
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Peak virtual memory: 4824 megabytes
+    Info: Processing ended: Sun Mar 24 17:00:16 2024
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:00:53
 
 
