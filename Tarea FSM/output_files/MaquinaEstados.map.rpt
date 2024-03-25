@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MaquinaEstados
-Sun Mar 24 17:00:16 2024
+Sun Mar 24 19:49:46 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -47,7 +47,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Mar 24 17:00:15 2024       ;
+; Analysis & Synthesis Status     ; Successful - Sun Mar 24 19:49:46 2024       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; MaquinaEstados                              ;
 ; Top-level Entity Name           ; FSM                                         ;
@@ -185,14 +185,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------+
 ; Resource                                    ; Usage    ;
 +---------------------------------------------+----------+
-; Estimate of Logic utilization (ALMs needed) ; 7        ;
+; Estimate of Logic utilization (ALMs needed) ; 10       ;
 ;                                             ;          ;
-; Combinational ALUT usage for logic          ; 14       ;
+; Combinational ALUT usage for logic          ; 19       ;
 ;     -- 7 input functions                    ; 0        ;
-;     -- 6 input functions                    ; 0        ;
+;     -- 6 input functions                    ; 1        ;
 ;     -- 5 input functions                    ; 0        ;
-;     -- 4 input functions                    ; 2        ;
-;     -- <=3 input functions                  ; 12       ;
+;     -- 4 input functions                    ; 0        ;
+;     -- <=3 input functions                  ; 18       ;
 ;                                             ;          ;
 ; Dedicated logic registers                   ; 4        ;
 ;                                             ;          ;
@@ -202,8 +202,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;          ;
 ; Maximum fan-out node                        ; state.11 ;
 ; Maximum fan-out                             ; 9        ;
-; Total fan-out                               ; 80       ;
-; Average fan-out                             ; 1.40     ;
+; Total fan-out                               ; 93       ;
+; Average fan-out                             ; 1.50     ;
 +---------------------------------------------+----------+
 
 
@@ -212,7 +212,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |FSM                       ; 14 (14)             ; 4 (4)                     ; 0                 ; 1          ; 19   ; 0            ; |FSM                ; FSM         ; work         ;
+; |FSM                       ; 19 (19)             ; 4 (4)                     ; 0                 ; 1          ; 19   ; 0            ; |FSM                ; FSM         ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -293,19 +293,19 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 4                           ;
 ;     CLR               ; 4                           ;
-; arriav_lcell_comb     ; 14                          ;
-;     arith             ; 8                           ;
-;         1 data inputs ; 7                           ;
-;         2 data inputs ; 1                           ;
-;     normal            ; 6                           ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 2                           ;
+; arriav_lcell_comb     ; 19                          ;
+;     arith             ; 14                          ;
+;         1 data inputs ; 12                          ;
+;         2 data inputs ; 2                           ;
+;     normal            ; 5                           ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 2                           ;
+;         6 data inputs ; 1                           ;
 ; arriav_mac            ; 1                           ;
 ; boundary_port         ; 19                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.70                        ;
-; Average LUT depth     ; 1.24                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.44                        ;
 +-----------------------+-----------------------------+
 
 
@@ -324,7 +324,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sun Mar 24 16:59:48 2024
+    Info: Processing started: Sun Mar 24 19:49:34 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MaquinaEstados -c MaquinaEstados
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -337,15 +337,15 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 34 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 39 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 14 logic cells
+    Info (21061): Implemented 19 logic cells
     Info (21062): Implemented 1 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4824 megabytes
-    Info: Processing ended: Sun Mar 24 17:00:16 2024
-    Info: Elapsed time: 00:00:28
-    Info: Total CPU time (on all processors): 00:00:53
+    Info: Peak virtual memory: 4830 megabytes
+    Info: Processing ended: Sun Mar 24 19:49:46 2024
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:28
 
 

@@ -3,7 +3,7 @@ module FSM(input clk, press, rst,
 				output reg [7:0] count);
 
 logic [1:0] state, next_state;
-reg [7:0] count_cycle;
+reg [5:0] count_cycle;
 reg [7:0] count_reg;
 reg [7:0] error_reg;
 
@@ -12,7 +12,7 @@ initial begin
 	state = 2'b00;
 	error_reg = 8'h00;
 	count_reg = 8'h00;
-	count_cycle = 8'h00;
+	count_cycle = 6'h00;
 end
 
 
@@ -40,7 +40,7 @@ begin
 		end
 		2'b01:
 		begin
-			if (count_cycle == 8'h64) next_state = 2'b11;
+			if (count_cycle == 6'h32) next_state = 2'b11;
 			else begin 
 				next_state = 2'b00;
 			end
