@@ -1,5 +1,5 @@
 Assembler report for MaquinaEstados
-Sun Mar 24 19:50:46 2024
+Sun Mar 24 20:28:03 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/output_files/MaquinaEstados.sof
+  5. Assembler Device Options: C:/Users/Daniel/Desktop/Tareas/Tarea FSM/output_files/MaquinaEstados.sof
   6. Assembler Messages
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Mar 24 19:50:46 2024 ;
+; Assembler Status      ; Successful - Sun Mar 24 20:28:03 2024 ;
 ; Revision Name         ; MaquinaEstados                        ;
 ; Top-level Entity Name ; FSM                                   ;
 ; Family                ; Cyclone V                             ;
@@ -53,23 +53,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+-------------------------------------------------------------------------------+
-; Assembler Generated Files                                                     ;
-+-------------------------------------------------------------------------------+
-; File Name                                                                     ;
-+-------------------------------------------------------------------------------+
-; C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/output_files/MaquinaEstados.sof ;
-+-------------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+; Assembler Generated Files                                                ;
++--------------------------------------------------------------------------+
+; File Name                                                                ;
++--------------------------------------------------------------------------+
+; C:/Users/Daniel/Desktop/Tareas/Tarea FSM/output_files/MaquinaEstados.sof ;
++--------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/HP/Documents/GitHub/Tareas/Tarea FSM/output_files/MaquinaEstados.sof ;
-+----------------+----------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                ;
-+----------------+----------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x00AFBEBC                                                                             ;
-; Checksum       ; 0x00AFBEBC                                                                             ;
-+----------------+----------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Daniel/Desktop/Tareas/Tarea FSM/output_files/MaquinaEstados.sof ;
++----------------+-----------------------------------------------------------------------------------+
+; Option         ; Setting                                                                           ;
++----------------+-----------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x00AFCE01                                                                        ;
+; Checksum       ; 0x00AFCE01                                                                        ;
++----------------+-----------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -78,14 +78,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sun Mar 24 19:50:40 2024
+    Info: Processing started: Sun Mar 24 20:27:58 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off MaquinaEstados -c MaquinaEstados
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4837 megabytes
-    Info: Processing ended: Sun Mar 24 19:50:46 2024
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Processing ended: Sun Mar 24 20:28:03 2024
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
 
 
