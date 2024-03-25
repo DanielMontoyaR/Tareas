@@ -39,16 +39,12 @@ initial begin
 	
 	rst= 0;
 	press = 0;
-	#200
+	#2000
 	
 	rst= 1;
 	press = 0;
 	#20
 	
-	rst= 0;
-	press = 1;
-	#20
-
 	rst= 0;
 	press = 1;
 	
